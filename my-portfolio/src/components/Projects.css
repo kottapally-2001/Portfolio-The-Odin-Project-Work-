@@ -1,0 +1,103 @@
+.projects-section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects-section p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.project-category {
+  margin-bottom: 2.5rem;
+}
+
+.category-title {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0a66c2;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 1.1rem;
+  box-shadow: 0 4px 10px rgba(20, 20, 20, 0.03);
+  transition: transform 300ms ease, box-shadow 300ms ease, opacity 400ms ease;
+  transform: translateY(8px);
+  opacity: 0;
+}
+
+.project-card.visible {
+  transform: translateY(0);
+  opacity: 1;
+  box-shadow: 0 8px 22px rgba(20, 20, 20, 0.06);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.project-header h4 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.05rem;
+}
+
+.project-desc {
+  color: #444;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #cfd8dc;
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: inherit;
+  transition: background-color 150ms ease, transform 120ms ease;
+}
+
+.btn-outline:hover {
+  transform: translateY(-3px);
+  background-color: rgba(10, 102, 194, 0.06);
+}
+
+/* Fix for links not clickable */
+.project-card {
+  position: relative;
+  z-index: 10;
+}
+
+.project-links a {
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
+}
