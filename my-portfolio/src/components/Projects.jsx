@@ -228,7 +228,7 @@ export default function Projects() {
         description:
           "A photo tagging application inspired by the classic 'Where's Waldo' game, built with Node.js and Nest.js.",
         github: "https://github.com/kottapally-2001/Where-s-Waldo-A-Photo-Tagging-App-.git",
-        preview: "",
+        preview: "https://messaging-app-full-stack-project.vercel.app/login",
       },
        {
         title: "Full Stack Messaging Application (Next.js)",
