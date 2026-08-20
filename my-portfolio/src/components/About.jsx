@@ -1,58 +1,164 @@
 import React from "react";
-import "./About.css";
+import {
+  FaMapMarkerAlt,
+  FaBriefcase,
+  FaGraduationCap,
+  FaLaptopCode,
+  FaAward,
+  FaCode,
+  FaServer,
+  FaBrain,
+} from "react-icons/fa";
 
 function About() {
   return (
     <section id="about" className="section about-section">
-      <h2>About Me</h2>
 
-      {/* MAIN PROFILE PIC */}
-      <img
-        src="./Sai.jpeg"
-        alt="Sai Charan"
-        className="about-profile"
-      />
+      <div className="container">
 
-      {/* ABOUT TEXT */}
-      <div className="about-text">
-        I'm a passionate Full Stack Developer who enjoys turning ideas into
-        scalable and visually appealing digital solutions. With a strong command
-        of HTML, CSS, JavaScript, React, Node.js, and Express,<br /><br />
-        I build responsive, high-performance web applications that balance clean
-        design with robust functionality.
-        <br /><br />
+        <h2 className="section-title">About Me</h2>
 
-        On the frontend, I focus on crafting smooth, engaging user interfaces
-        with modern frameworks like React, ensuring each component is optimized
-        for both speed and accessibility.
-        <br /><br />
+        <p className="section-subtitle">
+          Passionate about building scalable software, enterprise applications,
+          and AI-powered solutions that create real business value.
+        </p>
 
-        On the backend, I design secure RESTful APIs using Node.js and Express,
-        integrate databases like PostgreSQL and MongoDB, and handle
-        authentication, deployment, and cloud storage with tools like Prisma,
-        Passport.js, and Cloudinary.
-        <br /><br />
+        <div className="about-container">
 
-        Beyond coding, I have a deep interest in problem-solving, system
-        architecture, and performance optimization. I enjoy collaborating with
-        teams, following best practices in Git and agile development, and
-        continuously learning new technologies that enhance both user and
-        developer experience.
+          {/* LEFT */}
+
+          <div className="about-left">
+
+            <img
+              src="/Sai.png"
+              alt="Sai Charan"
+              className="about-profile"
+            />
+
+            <div className="about-details">
+
+              <div className="detail">
+                <FaBriefcase className="detail-icon" />
+                <span>Software Engineer</span>
+              </div>
+
+              <div className="detail">
+                <FaLaptopCode className="detail-icon" />
+                <span>Full Stack Developer</span>
+              </div>
+
+              <div className="detail">
+                <FaGraduationCap className="detail-icon" />
+                <span>MCA Post Graduate</span>
+              </div>
+
+              <div className="detail">
+                <FaMapMarkerAlt className="detail-icon" />
+                <span>Hyderabad, India</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT */}
+
+          <div className="about-right">
+
+            <h3>
+              Software Engineer specializing in Full Stack & AI Development
+            </h3>
+
+            <p>
+              I'm a Software Engineer with experience building scalable,
+              enterprise-grade web applications using modern JavaScript
+              technologies. I enjoy transforming business requirements into
+              secure, high-performance software.
+            </p>
+
+            <p>
+              Currently working on the <strong>MIYO Health Platform</strong>,
+              where I develop secure REST APIs, optimize PostgreSQL databases,
+              build analytics dashboards, and enhance healthcare applications
+              using React.js, NestJS, Cube.js, and AWS QuickSight.
+            </p>
+
+            <p>
+              I also build AI-powered applications using LangChain, RAG,
+              Ollama, ChromaDB, Embeddings, and Vector Databases to create
+              intelligent assistants and analytics platforms.
+            </p>
+
+            {/* Highlights */}
+
+            <div className="highlights">
+
+              <div className="highlight-card">
+                <FaCode />
+                <div>
+                  <h4>Frontend</h4>
+                  <p>React.js, JavaScript, TypeScript</p>
+                </div>
+              </div>
+
+              <div className="highlight-card">
+                <FaServer />
+                <div>
+                  <h4>Backend</h4>
+                  <p>NestJS, Node.js, Express.js</p>
+                </div>
+              </div>
+
+              <div className="highlight-card">
+                <FaBrain />
+                <div>
+                  <h4>Artificial Intelligence</h4>
+                  <p>LangChain, RAG, Ollama</p>
+                </div>
+              </div>
+
+              <div className="highlight-card">
+                <FaAward />
+                <div>
+                  <h4>Enterprise Experience</h4>
+                  <p>Healthcare & Analytics Platforms</p>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Statistics */}
+
+            <div className="about-cards">
+
+              <div className="about-card">
+                <h2>1+</h2>
+                <span>Years Experience</span>
+              </div>
+
+              <div className="about-card">
+                <h2>25+</h2>
+                <span>Projects Built</span>
+              </div>
+
+              <div className="about-card">
+                <h2>10+</h2>
+                <span>Technologies</span>
+              </div>
+
+              <div className="about-card">
+                <h2>2+</h2>
+                <span>Enterprise Apps</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <p className="about-footer">
-        My goal is to create solutions that not only work flawlessly but also
-        leave a lasting impression — blending creativity, logic, and technology
-        to make meaningful products that people love to use.
-      </p>
-
-      {/* PHOTO GRID */}
-      <div className="about-photo-grid">
-        <img src="./sai2.jpeg" alt="Sai 2" />
-        <img src="./sai4.jpeg" alt="Sai 4" />
-        <img src="./sai5.jpeg" alt="Sai 5" />
-      </div>
-      
     </section>
   );
 }
